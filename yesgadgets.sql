@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.1.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 19, 2022 at 10:09 AM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.1
+-- Generation Time: Jun 23, 2022 at 08:10 AM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `hci`
+-- Database: `yesgadgets`
 --
 
 -- --------------------------------------------------------
@@ -39,18 +39,11 @@ CREATE TABLE `item_order` (
 --
 
 INSERT INTO `item_order` (`item_order_id`, `order_id`, `product_id`, `quantity`) VALUES
-(1, 1, 8, 1),
-(2, 2, 14, 5),
-(3, 3, 1, 4),
-(4, 3, 6, 1),
-(5, 4, 1, 2),
-(6, 5, 4, 2),
-(7, 6, 1, 4),
-(8, 7, 1, 7),
-(9, 8, 6, 4),
-(10, 9, 1, 2),
-(11, 10, 6, 1),
-(12, 10, 2, 1);
+(1, 1, 1, 2),
+(2, 1, 4, 1),
+(3, 2, 1, 3),
+(4, 2, 10, 1),
+(5, 2, 9, 1);
 
 -- --------------------------------------------------------
 
@@ -63,24 +56,17 @@ CREATE TABLE `orders` (
   `date` date DEFAULT curdate(),
   `time` time DEFAULT curtime(),
   `total_price` int(11) NOT NULL,
-  `status` varchar(10) NOT NULL DEFAULT 'pending'
+  `status` varchar(10) NOT NULL DEFAULT 'pending',
+  `user_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `orders`
 --
 
-INSERT INTO `orders` (`order_id`, `date`, `time`, `total_price`, `status`) VALUES
-(1, '2022-05-14', '14:58:01', 5999, 'pending'),
-(2, '2022-05-14', '15:15:52', 15000, 'pending'),
-(3, '2022-05-14', '15:25:43', 92500, 'pending'),
-(4, '2022-05-16', '21:45:49', 45000, 'pending'),
-(5, '2022-05-18', '07:15:36', 48000, 'pending'),
-(6, '2022-05-18', '16:04:33', 90000, 'pending'),
-(7, '2022-05-18', '16:08:46', 157500, 'pending'),
-(8, '2022-05-25', '13:17:27', 10000, 'pending'),
-(9, '2022-05-25', '13:59:34', 45000, 'completed'),
-(10, '2022-06-02', '09:20:22', 11499, 'pending');
+INSERT INTO `orders` (`order_id`, `date`, `time`, `total_price`, `status`, `user_id`) VALUES
+(1, '2022-06-22', '20:29:08', 69000, 'completed', 1),
+(2, '2022-06-23', '08:54:31', 89490, 'pending', 2);
 
 -- --------------------------------------------------------
 
@@ -105,7 +91,7 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`product_id`, `product_name`, `product_brand`, `product_price`, `product_ram`, `product_category`, `product_image`, `product_quantity`, `product_status`) VALUES
-(1, 's22 ultra', 'samsung', '22500.00', '4', 'phone', 's22 ultra12gb.jpg', 10, '1'),
+(1, 's22 ultra', 'samsung', '22500.00', '4', 'phone', 's22 ultra12gb.jpg', 7, '1'),
 (2, '\r\nInfinix Hot S3 (Sandstone Black, 32 GB)  (3 GB RAM)', 'Infinix', '8999.00', '3', 'phone', 'image-2.jpeg', 10, '1'),
 (3, 'tablet s8', 'Samsung', '15000.00', '4', 'Laptop', 'image-3.jpeg', 10, '1'),
 (4, 'Mac S14', 'Apple', '24000.00', '3', 'laptop', 'mac14.jpg', 10, '1'),
@@ -114,7 +100,7 @@ INSERT INTO `product` (`product_id`, `product_name`, `product_brand`, `product_p
 (7, 'Oppo wrist watch band', 'oppo', '2500.00', '2', 'smartwatch', 'oppob.jpg', 10, '1'),
 (8, 'pova a2', 'Nokia', '5999.00', '1', 'phone', 'pova2.jpg', 10, '1'),
 (9, 'OPPO F5 (Black, 64 GB)  (6 GB RAM)', 'OPPO', '19990.00', '6', 'phone', 'image-9.jpeg', 10, '1'),
-(10, 'harman speaker', 'speaker', '2000.00', '3', 'speaker', 'harman.jpg', 10, '1'),
+(10, 'harman speaker', 'speaker', '2000.00', '3', 'speaker', 'harman.jpg', 15, '1'),
 (12, 'Galaxy A0', 'Galaxy', '10999.00', '3', 'Phone', 'GA0.jpg', 10, '1'),
 (14, 'xioami airdots', 'xioami', '3000.00', '4', 'earpods', 'xiomiairdots.jpg', 10, '1');
 
@@ -140,9 +126,8 @@ CREATE TABLE `shippingdetails` (
 --
 
 INSERT INTO `shippingdetails` (`order_id`, `shippingDetails_id`, `fullName`, `address`, `email`, `phoneNo`, `city`, `postalCode`) VALUES
-(8, 1, 'Kendii', 'Membley', 'kendii@gmail.com', '0711225678', 'Nairobi', '10010'),
-(9, 2, 'Kendii', '222', 'kendii@gmail.com', '0786765543', 'Nairobi', '0100'),
-(9, 3, 'Kendii', '222', 'kendii@gmail.com', '0786765543', 'Nairobi', '0100');
+(1, 1, 'Jane Kendi', 'Mirema House No.31', 'kendi@gmail.com', '0712323232', 'Nairobi', '10010'),
+(2, 2, 'John', 'Membley', 'john@gmail.com', '0766554463', 'Nairobi', '10010');
 
 -- --------------------------------------------------------
 
@@ -165,12 +150,9 @@ CREATE TABLE `tbl_users` (
 --
 
 INSERT INTO `tbl_users` (`user_id`, `first_name`, `last_name`, `email_address`, `user_name`, `user_password`, `role`) VALUES
-(1, 'Nat', 'Talie', 'nat@gmail.com', 'nat', '124455', 'client'),
-(2, 'n', 'nnm', 'ccv@gmail.com', 'hh', 'hhh', 'client'),
-(3, 'b', 'b', 'b@gmail.com', 'client', 'qw', 'client'),
-(7, 'Billy', 'Goat', 'billgt@gmail.com', 'BillyGoat', 'Billyboy', 'admin'),
-(8, 'Millicent', 'Wambui', 'mbui@gmail.com', 'MillWam', 'Milly123', 'admin'),
-(9, 'Harry', 'Harold', 'hhar@gmail.com', 'Harhar', 'Password123', 'admin');
+(1, 'Simon', 'Peter', 'peter@gmail.com', 'Simon', 'simon123', 'client'),
+(2, 'Milly', 'Wambui', 'milly@gmail.com', 'MillWam', 'Milly123', 'admin'),
+(3, 'Drexel', 'Alexis', 'alexis@gmail.com', 'Alexis', 'alexis123', 'client');
 
 --
 -- Indexes for dumped tables
@@ -188,7 +170,8 @@ ALTER TABLE `item_order`
 -- Indexes for table `orders`
 --
 ALTER TABLE `orders`
-  ADD PRIMARY KEY (`order_id`);
+  ADD PRIMARY KEY (`order_id`),
+  ADD KEY `user_id` (`user_id`);
 
 --
 -- Indexes for table `product`
@@ -217,13 +200,13 @@ ALTER TABLE `tbl_users`
 -- AUTO_INCREMENT for table `item_order`
 --
 ALTER TABLE `item_order`
-  MODIFY `item_order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `item_order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `product`
@@ -235,13 +218,13 @@ ALTER TABLE `product`
 -- AUTO_INCREMENT for table `shippingdetails`
 --
 ALTER TABLE `shippingdetails`
-  MODIFY `shippingDetails_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `shippingDetails_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tbl_users`
 --
 ALTER TABLE `tbl_users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Constraints for dumped tables
@@ -253,6 +236,12 @@ ALTER TABLE `tbl_users`
 ALTER TABLE `item_order`
   ADD CONSTRAINT `item_order_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`order_id`),
   ADD CONSTRAINT `item_order_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `product` (`product_id`);
+
+--
+-- Constraints for table `orders`
+--
+ALTER TABLE `orders`
+  ADD CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `tbl_users` (`user_id`);
 
 --
 -- Constraints for table `shippingdetails`
