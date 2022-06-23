@@ -20,7 +20,7 @@
         $statement_order->execute();
         $result_order = $statement_order->fetchAll();
         $total_row_order = $statement_order->rowCount();
-    }else{
+    }
 
 
 ?>
@@ -122,7 +122,6 @@
         
                 <a href = "../product/index.php" title="Continue Shopping"><button style = "height: 50px;width:250px;"class = 'btn'>Continue Shopping</button></a>
                 <a href = "../cart.php" title="View my Cart"><button style = "height: 50px;width:250px;"class = 'btn'>View Cart</button></a>
-                </div><?php
-            }?>
+                </div>
     </body>
 </html>
