@@ -33,5 +33,7 @@ password: simon123
 
 Use the username and password to log in.
 
-<img width="960" alt="2022-08-10 (16)" src="https://user-images.githubusercontent.com/69391540/184010029-7f218ab4-213d-4d2b-9bfa-df85c6c38eff.png">
+Improved website Homepage:
 
+<img width="947" alt="homepage" src="https://user-<img width="947" alt="homepage-footer" src="https://user-images.githubusercontent.com/69391540/184011906-ab5cdb93-aea3-41a0-b4c3-be68b9c03976.png">
+images.githubusercontent.com/69391540/184011863-61c497ce-cb8f-49e1-b9eb-096ad1cd8d1a.png"><img width="944" alt="homepage-aboutus" src="https://user-images.githubusercontent.com/69391540/184011870-eccc4f58-3b64-426f-b934-6cba16775c86.png"><img width="950" alt="homepage-categories" src="https://user-images.githubusercontent.com/69391540/184011878-98841a41-95f3-4dab-9d9a-b1bfbcc8dc21.png"><img width="947" alt="homepage-categories1" src="https://user-images.githubusercontent.com/69391540/184011886-bced403e-fe08-4dc0-a624-2e7db73f4cd0.png">
