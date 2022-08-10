@@ -1,46 +1,30 @@
 # YesGadgets
 
-This was a team effort for a class project, unit name: Human Computer Interactions.
-
-Task: Identify a poorly designed interface and redo it.
+This was a team effort for a class project, unit name: Human Computer Interactions.The task was to identify a poorly designed interface and redo it.
 
 Website identified: Yes Gadgets Kenya found at: https://yes-gadgets-ke.business.site/
-
 It is an ecommerce website that deals with electronic products for example: phones, smartwatchees, laptops etc.
 
 Xampp php Myadmin,a MySQL database, was used. The database file is: yesgadgets.sql
 
-Homepage is found in users/homepage.php
+Homepage is found in users/homepage.php Login and Registration can be accessed by clicking the user icon at the top of the homepage.
 
-Login and Registration can be accessed by clicking the user icon at the top of the homepage.
-
-Login: users/signin.php
-
-Registration: users/signup.php
-
+Login: users/signin.php and Registration: users/signup.php
 
 Already existing users:
-
 Admin Login: 
-
 Email: milly@gmail.com
-
 Username: MillWam
-
 password: Milly123
 
 To exit the admin interface there is a user icon at the top of admin dashboard page, once you click on it, there is an option to logout. this will redirect you to the website's homepage.
 
 Client Login:
-
-You can register a new user and use them to login
+You can register a new user and use them to login.
 
 Alternatively, client login:
-
 Email: peter@gmail.com
-
 Username: simon
-
 password: simon123
 
 Use the username and password to log in.
@@ -61,3 +45,11 @@ Improved website products page:
 
 Improved website cart page:
 <img width="947" alt="cart" src="https://user-images.githubusercontent.com/69391540/184013295-1fc45b59-e3c2-45a4-9bea-c85e92a1bca2.png">
+
+Examples of admin interfaces:
+Admin View Products Page
+
+<img width="948" alt="admin" src="https://user-images.githubusercontent.com/69391540/184015586-c7635f7c-4adb-4381-9abd-a538891afd22.png">
+
+Admin View Orders Page
+<img width="960" alt="admin-viewOrders" src="https://user-images.githubusercontent.com/69391540/184015652-9cd537bf-30ef-4564-b9be-c7eb0809adb7.png">
