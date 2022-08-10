@@ -34,6 +34,11 @@ password: simon123
 Use the username and password to log in.
 
 Improved website Homepage:
+<img width="947" alt="homepage" src="https://user-images.githubusercontent.com/69391540/184012196-ec9e7814-d001-46bc-b7a2-564ab8d35b67.png">
 
-<img width="947" alt="homepage" src="https://user-<img width="947" alt="homepage-footer" src="https://user-images.githubusercontent.com/69391540/184011906-ab5cdb93-aea3-41a0-b4c3-be68b9c03976.png">
-images.githubusercontent.com/69391540/184011863-61c497ce-cb8f-49e1-b9eb-096ad1cd8d1a.png"><img width="944" alt="homepage-aboutus" src="https://user-images.githubusercontent.com/69391540/184011870-eccc4f58-3b64-426f-b934-6cba16775c86.png"><img width="950" alt="homepage-categories" src="https://user-images.githubusercontent.com/69391540/184011878-98841a41-95f3-4dab-9d9a-b1bfbcc8dc21.png"><img width="947" alt="homepage-categories1" src="https://user-images.githubusercontent.com/69391540/184011886-bced403e-fe08-4dc0-a624-2e7db73f4cd0.png">
+<img width="944" alt="homepage-aboutus" src="https://user-images.githubusercontent.com/69391540/184012259-23e3acaf-6158-48b6-ab5b-0220c7352094.png">
+
+<img width="950" alt="homepage-categories" src="https://user-images.githubusercontent.com/69391540/184012283-be71c334-d770-47f5-8535-535068ea4fdf.png">
+<img width="947" alt="homepage-categories1" src="https://user-images.githubusercontent.com/69391540/184012322-1eeb5437-383f-4ce6-82b5-6d441587f05c.png">
+<img width="952" alt="homepage-categories2" src="https://user-images.githubusercontent.com/69391540/184012519-382c3fd6-6bf3-464e-b360-df98e447211c.png">
+<img width="947" alt="homepage-footer" src="https://user-images.githubusercontent.com/69391540/184012544-111ef98b-c22e-4ca1-9d62-50eefe21988a.png">
