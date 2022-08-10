@@ -42,3 +42,12 @@ Improved website Homepage:
 <img width="947" alt="homepage-categories1" src="https://user-images.githubusercontent.com/69391540/184012322-1eeb5437-383f-4ce6-82b5-6d441587f05c.png">
 <img width="952" alt="homepage-categories2" src="https://user-images.githubusercontent.com/69391540/184012519-382c3fd6-6bf3-464e-b360-df98e447211c.png">
 <img width="947" alt="homepage-footer" src="https://user-images.githubusercontent.com/69391540/184012544-111ef98b-c22e-4ca1-9d62-50eefe21988a.png">
+
+Improved website products page:
+<img width="946" alt="product" src="https://user-images.githubusercontent.com/69391540/184013909-6e14d9f4-ef9b-4cac-a985-cd4ba5f5fab4.png">
+<img width="944" alt="product1" src="https://user-images.g<img width="960" alt="product2" src="https://user-images.githubusercontent.com/69391540/184013937-35275c0c-bd95-449f-95f2-01752695423a.png">
+<img width="960" alt="product2" src="https://user-images.githubusercontent.com/69391540/184014004-388841fa-611d-4472-8e5e-3c4fe531143d.png">
+
+
+Improved website cart page:
+<img width="947" alt="cart" src="https://user-images.githubusercontent.com/69391540/184013295-1fc45b59-e3c2-45a4-9bea-c85e92a1bca2.png">
