@@ -1,8 +1,8 @@
 # YesGadgets
 
-This was a team effort for a class project, unit name: Human Computer Interactions.The task was to identify a poorly designed website and redo it.
+This was a team effort for a class project, unit name: Human Computer Interactions.The task was to identify an exising website whose design we can improve on and redo it.
 
-Website identified: Yes Gadgets Kenya found at: https://yes-gadgets-ke.business.site/
+Website identified: Yes Gadgets Kenya found at: https://yesgadgetskenya.com/
 It is an ecommerce website that deals with electronic products for example: phones, smartwatches, laptops etc.
 
 Xampp php Myadmin,a MySQL database, was used. The database file is: yesgadgets.sql
